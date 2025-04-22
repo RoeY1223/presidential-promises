@@ -248,7 +248,7 @@ function displayCandidatePromises(candidate) {
     // 모달 후보자 정보 설정
     modalCandidateImg.src = candidate.image;
     modalCandidateImg.alt = candidate.name;
-    modalCandidateName.textContent = candidate.name;
+    modalCandidateName.textContent = `${candidate.name} 공약`;
     modalCandidateParty.textContent = `${candidate.party}${
       candidate.position ? " | " + candidate.position : ""
     }`;
