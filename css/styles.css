@@ -364,13 +364,14 @@ main {
   background-color: var(--modal-bg);
   color: var(--modal-text);
   margin: 5% auto;
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 800px;
+  padding: 2.5rem;
+  border-radius: 12px;
+  max-width: 850px;
   width: 90%;
   box-shadow: 0 5px 30px var(--modal-shadow);
   position: relative;
   animation: modalFadeIn 0.4s;
+  line-height: 1.6;
 }
 
 @keyframes modalFadeIn {
@@ -458,43 +459,81 @@ main {
 
 /* 신뢰성 모달 스타일 */
 .trust-content {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+  font-size: 1.05rem;
 }
 
 .trust-section {
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--section-border);
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 .trust-section:last-child {
-  border-bottom: none;
+  margin-bottom: 1rem;
 }
 
 .trust-section h3 {
   color: var(--trust-color);
-  margin-bottom: 0.75rem;
-  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--trust-color);
+  padding-bottom: 0.6rem;
+  display: inline-block;
 }
 
 .trust-section p {
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  line-height: 2;
 }
 
 .trust-section ul {
   padding-left: 1.5rem;
   margin-bottom: 1rem;
+  list-style-type: disc;
 }
 
 .trust-section li {
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+  padding-left: 0.5rem;
+}
+
+.trust-explanation {
+  background-color: rgba(40, 167, 69, 0.1);
+  border-left: 4px solid var(--trust-color);
+  padding: 1.8rem;
+  border-radius: 8px;
+  margin: 2.5rem 0;
+}
+
+.data-prompt-details {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--section-border);
+}
+  
+.data-prompt-details summary {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: background-color 0.3s ease;
+}
+
+.data-prompt-details summary:hover {
+  background-color: #eaeaea;
 }
 
 .trust-button-container {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--section-border);
 }
 
 .trust-close-btn {

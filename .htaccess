@@ -1,0 +1,54 @@
+# 적절한 MIME 타입 설정
+<IfModule mod_mime.c>
+  # XML 파일 타입 설정
+  AddType application/xml .xml
+  
+  # sitemap.xml을 위한 특별 설정
+  <Files "sitemap.xml">
+    ForceType application/xml
+  </Files>
+</IfModule>
+
+# 기본 인코딩 설정
+AddDefaultCharset UTF-8
+
+# 캐싱 설정
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # 이미지는 1주일 캐싱
+  ExpiresByType image/jpeg "access plus 1 week"
+  ExpiresByType image/png "access plus 1 week"
+  ExpiresByType image/gif "access plus 1 week"
+  ExpiresByType image/svg+xml "access plus 1 week"
+  
+  # CSS, JavaScript는 1일 캐싱
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+  
+  # HTML, XML은 1시간 캐싱
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType application/xml "access plus 1 hour"
+</IfModule>
+
+# 압축 설정
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml text/css application/javascript application/json
+</IfModule>
+
+# 보안 헤더 설정
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# 오류 페이지 설정
+ErrorDocument 404 /404.html
+
+# www로 리다이렉트
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^2025년대통령공약\.kr [NC]
+RewriteRule ^(.*)$ https://www.2025년대통령공약.kr/$1 [L,R=301]
+
+# 방문자 IP 차단 등 추가 보안 설정은 여기에 추가
