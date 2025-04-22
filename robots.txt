@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /candidates/
+Disallow: /js/
+Disallow: /css/
+Disallow: /*.js$
+Disallow: /*.css$
+
+Sitemap: https://yourdomain.com/sitemap.xml

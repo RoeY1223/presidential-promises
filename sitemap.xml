@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- 메인 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/index.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 김동연 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/kim-dong-yeon.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/김동연.jpg</image:loc>
+      <image:title>김동연 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 이재명 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/lee-jae-myung.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/이재명.jpg</image:loc>
+      <image:title>이재명 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 김경수 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/kim-kyung-soo.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/김경수.jpg</image:loc>
+      <image:title>김경수 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 이준석 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/lee-jun-seok.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/이준석.jpg</image:loc>
+      <image:title>이준석 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 안철수 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/ahn-cheol-soo.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/안철수.jpg</image:loc>
+      <image:title>안철수 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 김문수 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/kim-moon-soo.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/김문수.jpg</image:loc>
+      <image:title>김문수 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 한동훈 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/han-dong-hoon.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/한동훈.jpg</image:loc>
+      <image:title>한동훈 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 나경원 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/na-kyung-won.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/나경원.jpg</image:loc>
+      <image:title>나경원 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 홍준표 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/hong-joon-pyo.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/홍준표.jpg</image:loc>
+      <image:title>홍준표 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 유정복 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/yoo-jeong-bok.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/유정복.jpg</image:loc>
+      <image:title>유정복 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 이철우 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/lee-cheol-woo.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/이철우.jpg</image:loc>
+      <image:title>이철우 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 양향자 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/yang-hyang-ja.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/양향자.jpg</image:loc>
+      <image:title>양향자 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 김재연 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/kim-jae-yeon.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/김재연.jpg</image:loc>
+      <image:title>김재연 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 강성희 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/kang-sung-hee.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/강성희.jpg</image:loc>
+      <image:title>강성희 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 권영국 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/kwon-young-gook.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/권영국.jpg</image:loc>
+      <image:title>권영국 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 한상균 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/han-sang-gyun.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/한상균.jpg</image:loc>
+      <image:title>한상균 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 황교안 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/hwang-kyo-ahn.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/황교안.jpg</image:loc>
+      <image:title>황교안 후보 사진</image:title>
+    </image:image>
+  </url>
+
+  <!-- 전광훈 후보 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/candidates/jeon-kwang-hoon.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/전광훈.jpg</image:loc>
+      <image:title>전광훈 후보 사진</image:title>
+    </image:image>
+  </url>
+</urlset>
