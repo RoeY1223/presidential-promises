@@ -6,4 +6,4 @@ Disallow: /css/
 Disallow: /*.js$
 Disallow: /*.css$
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://2025년대통령공약.kr/sitemap.xml
