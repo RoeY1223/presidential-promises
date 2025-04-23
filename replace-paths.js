@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const glob = require("glob");
+const { glob } = require("glob");
 
 // 한글 이름 → 영문 슬러그 매핑
 const map = {
@@ -29,6 +29,7 @@ const patterns = [
   "./index.html",
   "./sitemap.xml",
   "./sitemap_index.xml",
+  "./sitemap.html",
   "./candidates/**/*.html",
 ];
 

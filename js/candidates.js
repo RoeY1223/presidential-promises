@@ -5,7 +5,7 @@ const candidates = [
     slug: "김동연",
     party: "더불어민주당",
     position: "경기도지사",
-    image: "images/김동연.jpg",
+    image: "images/kimdongyeon.jpg",
     promises: [
       {
         title: "중소기업 세금 감면 확대",
@@ -69,7 +69,7 @@ const candidates = [
     slug: "이재명",
     party: "더불어민주당",
     position: "국회의원",
-    image: "images/이재명.jpg",
+    image: "images/leejaeming.jpg",
     promises: [
       {
         title: "기본소득 제도 도입",
@@ -133,7 +133,7 @@ const candidates = [
     slug: "김경수",
     party: "더불어민주당",
     position: "전 경남도지사",
-    image: "images/김경수.jpg",
+    image: "images/kimkyungsu.jpg",
     promises: [
       {
         title: "디지털 혁신 일자리 창출",
@@ -197,7 +197,7 @@ const candidates = [
     slug: "이준석",
     party: "개혁신당",
     position: "국회의원",
-    image: "images/이준석.jpg",
+    image: "images/leejunseok.jpg",
     promises: [
       {
         title: "청년 주거지원 확대",
@@ -261,7 +261,7 @@ const candidates = [
     slug: "안철수",
     party: "국민의힘",
     position: "국회의원",
-    image: "images/안철수.jpg",
+    image: "images/anchulsu.jpg",
     promises: [
       {
         title: "AI 기반 신산업 육성",
@@ -325,7 +325,7 @@ const candidates = [
     slug: "김문수",
     party: "국민의힘",
     position: "전 고용노동부 장관",
-    image: "images/김문수.jpg",
+    image: "images/kimmunsu.jpg",
     promises: [
       {
         title: "노동시장 유연안정성 강화",
@@ -389,7 +389,7 @@ const candidates = [
     slug: "한동훈",
     party: "국민의힘",
     position: "전 법무장관",
-    image: "images/한동훈.jpg",
+    image: "images/handonghun.jpg",
     promises: [
       {
         title: "사법제도 개혁",
@@ -453,7 +453,7 @@ const candidates = [
     slug: "나경원",
     party: "국민의힘",
     position: "국회의원",
-    image: "images/나경원.jpg",
+    image: "images/nakyungwon.jpg",
     promises: [
       {
         title: "육아휴직 급여 인상",
@@ -517,7 +517,7 @@ const candidates = [
     slug: "홍준표",
     party: "국민의힘",
     position: "전 대구시장",
-    image: "images/홍준표.jpg",
+    image: "images/hongjunpyo.jpg",
     promises: [
       {
         title: "기업 규제 철폐",
@@ -581,7 +581,7 @@ const candidates = [
     slug: "유정복",
     party: "국민의힘",
     position: "인천광역시장",
-    image: "images/유정복.jpg",
+    image: "images/yoojungbok.jpg",
     promises: [
       {
         title: "수도권-지방 상생 발전",
@@ -645,7 +645,7 @@ const candidates = [
     slug: "이철우",
     party: "국민의힘",
     position: "전 경북도지사",
-    image: "images/이철우.jpg",
+    image: "images/leechulwoo.jpg",
     promises: [
       {
         title: "지방소멸 대응 정책 강화",
@@ -709,7 +709,7 @@ const candidates = [
     slug: "양향자",
     party: "국민의힘",
     position: "국회의원",
-    image: "images/양향자.jpg",
+    image: "images/yanghyangja.jpg",
     promises: [
       {
         title: "반도체 산업 경쟁력 강화",
@@ -773,7 +773,7 @@ const candidates = [
     slug: "김재연",
     party: "진보당",
     position: "전 국회의원",
-    image: "images/김재연.jpg",
+    image: "images/kimjaeyeon.jpg",
     promises: [
       {
         title: "비정규직 정규직화",
@@ -837,7 +837,7 @@ const candidates = [
     slug: "강성희",
     party: "진보당",
     position: "전 국회의원",
-    image: "images/강성희.jpg",
+    image: "images/kangseonghi.jpg",
     promises: [
       {
         title: "기후위기 대응 정책",
@@ -901,7 +901,7 @@ const candidates = [
     slug: "권영국",
     party: "사회대전환연대회의",
     position: "정의당 대표",
-    image: "images/권영국.jpg",
+    image: "images/kwonyoungguk.jpg",
     promises: [
       {
         title: "생태적 전환",
@@ -965,7 +965,7 @@ const candidates = [
     slug: "한상균",
     party: "사회대전환연대회의",
     position: "전 민주노총 위원장",
-    image: "images/한상균.jpg",
+    image: "images/hansanggyun.jpg",
     promises: [
       {
         title: "노동기본권 강화",
@@ -1029,7 +1029,7 @@ const candidates = [
     slug: "황교안",
     party: "무소속",
     position: "전 대통령 권한대행·전 국무총리",
-    image: "images/황교안.jpg",
+    image: "images/hwangkyoan.jpg",
     promises: [
       {
         title: "헌법 가치 수호",
@@ -1093,7 +1093,7 @@ const candidates = [
     slug: "전광훈",
     party: "무소속",
     position: "기독교연합 대표",
-    image: "images/전광훈.jpg",
+    image: "images/jeonkwanghun.jpg",
     promises: [
       {
         title: "기독교 가치 확산",

@@ -13,57 +13,146 @@
   
   <!-- 김동연 후보 -->
   <url>
-    <loc>https://2025년대통령공약.kr/candidates/김동연.html</loc>
+    <loc>https://2025년대통령공약.kr/candidates/kim-dong-yeon/kim-dong-yeon.html</loc>
     <lastmod>2025-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://2025년대통령공약.kr/candidates/김동연/중소기업-세금-감면-확대.html</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://2025년대통령공약.kr/candidates/김동연/청년-일자리-100만개-창출.html</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://2025년대통령공약.kr/candidates/김동연/디지털-경제-전환-지원금-도입.html</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://2025년대통령공약.kr/candidates/김동연/대학-등록금-50-감면.html</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://2025년대통령공약.kr/candidates/김동연/초중고-ai-교육-의무화.html</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
   
-  <!-- 중략: 나머지 후보의 URL들도 비슷한 형식으로 추가 -->
-  <!-- 양이 많으므로 일부만 포함 -->
-  
-  <!-- 이재명 후보 (일부) -->
+  <!-- 이재명 후보 -->
   <url>
-    <loc>https://2025년대통령공약.kr/candidates/이재명.html</loc>
+    <loc>https://2025년대통령공약.kr/candidates/lee-jae-myung/lee-jae-myung.html</loc>
     <lastmod>2025-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- 안철수 후보 -->
   <url>
-    <loc>https://2025년대통령공약.kr/candidates/이재명/기본소득-제도-도입.html</loc>
+    <loc>https://2025년대통령공약.kr/candidates/ahn-cheol-soo/ahn-cheol-soo.html</loc>
     <lastmod>2025-04-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 나경원 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/na-kyung-won/na-kyung-won.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 김경수 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/kim-kyung-soo/kim-kyung-soo.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 김문수 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/kim-moon-soo/kim-moon-soo.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 김재연 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/kim-jae-yeon/kim-jae-yeon.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 양향자 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/yang-hyang-ja/yang-hyang-ja.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 유정복 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/yoo-jeong-bok/yoo-jeong-bok.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 이준석 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/lee-jun-seok/lee-jun-seok.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 이철우 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/lee-cheol-woo/lee-cheol-woo.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 전광훈 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/jeon-kwang-hoon/jeon-kwang-hoon.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 한동훈 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/han-dong-hoon/han-dong-hoon.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 한상균 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/han-sang-gyun/han-sang-gyun.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 홍준표 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/hong-joon-pyo/hong-joon-pyo.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 황교안 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/hwang-kyo-ahn/hwang-kyo-ahn.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 강성희 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/kang-sung-hee/kang-sung-hee.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 권영국 후보 -->
+  <url>
+    <loc>https://2025년대통령공약.kr/candidates/kwon-young-gook/kwon-young-gook.html</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   
   <!-- 사이트맵 HTML 페이지 -->

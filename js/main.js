@@ -1,4 +1,30 @@
 // DOM이 로드된 후 실행
+// 한글 슬러그를 영문으로 변환하는 함수
+function getEnglishSlug(koreanSlug) {
+  const slugMap = {
+    '김동연': 'kim-dong-yeon',
+    '이재명': 'lee-jae-myung',
+    '김경수': 'kim-kyung-soo',
+    '이준석': 'lee-jun-seok',
+    '안철수': 'ahn-cheol-soo',
+    '김문수': 'kim-moon-soo',
+    '한동훈': 'han-dong-hoon',
+    '나경원': 'na-kyung-won',
+    '홍준표': 'hong-joon-pyo',
+    '유정복': 'yoo-jeong-bok',
+    '이철우': 'lee-cheol-woo',
+    '양향자': 'yang-hyang-ja',
+    '김재연': 'kim-jae-yeon',
+    '강성희': 'kang-sung-hee',
+    '권영국': 'kwon-young-gook',
+    '한상균': 'han-sang-gyun',
+    '황교안': 'hwang-kyo-ahn',
+    '전광훈': 'jeon-kwang-hoon'
+  };
+  
+  return slugMap[koreanSlug] || koreanSlug; // 매핑이 없으면 원래 슬러그 반환
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const candidatesGrid = document.getElementById("candidatesGrid");
   const modal = document.getElementById("promiseModal");
@@ -8,15 +34,51 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeTrustModalBtn = document.getElementById("closeTrustModal");
   const trustCloseBtn = document.querySelector(".trust-close-btn");
 
-  // 공약 모달 닫기 버튼 이벤트
-  closeModalBtn.addEventListener("click", () => {
-    modal.style.display = "none";
+  // URL에서 후보자 슬러그 추출 함수
+  function getCandidateSlugFromUrl() {
+    const path = window.location.pathname;
+    const match = path.match(/\/candidates\/([^\/]+)/);
+    return match ? match[1] : null;
+  }
+
+  // 초기 로드 시 URL을 기반으로 후보자 모달 표시
+  function handleInitialUrl() {
+    const urlSlug = getCandidateSlugFromUrl();
+    if (urlSlug) {
+      // 영문 slug에서 한글 slug 찾기
+      // 1. 정확히 매칭되는 후보자가 있는지 확인
+      let candidate = candidates.find(c => getEnglishSlug(c.slug) === urlSlug);
+      if (candidate) {
+        displayCandidatePromises(candidate);
+      }
+    }
+  }
+
+  // 뒤로 가기/앞으로 가기 버튼 처리
+  window.addEventListener('popstate', (event) => {
+    if (event.state && event.state.slug) {
+      const candidate = candidates.find(c => c.slug === event.state.slug);
+      if (candidate) {
+        displayCandidatePromises(candidate);
+      }
+    } else {
+      modal.style.display = "none";
+    }
   });
+
+  // 모달 닫기 시 URL 변경
+  function closeModal() {
+    modal.style.display = "none";
+    window.history.pushState({}, "", "/");
+  }
+
+  // 공약 모달 닫기 버튼 이벤트
+  closeModalBtn.addEventListener("click", closeModal);
 
   // 공약 모달 외부 클릭 시 닫기
   window.addEventListener("click", (event) => {
     if (event.target === modal) {
-      modal.style.display = "none";
+      closeModal();
     }
     if (event.target === trustModal) {
       trustModal.style.display = "none";
@@ -38,39 +100,31 @@ document.addEventListener("DOMContentLoaded", () => {
     trustModal.style.display = "none";
   });
 
-  // 정당 필터 옵션 채우기
-  // 정당 필터가 제거되어 주석 처리
-  /*
-  const parties = [...new Set(candidates.map(candidate => candidate.party))];
-  parties.sort().forEach(party => {
-    const option = document.createElement("option");
-    option.value = party;
-    option.textContent = party;
-    partyFilter.appendChild(option);
-  });
+  // 전체 후보 다시 로드하는 함수
+  function resetCandidatesDisplay() {
+    candidatesGrid.innerHTML = "";
+    const shuffledCandidates = shuffleArray([...candidates]);
+    shuffledCandidates.forEach((candidate) => {
+      const card = createCandidateCard(candidate);
+      candidatesGrid.appendChild(card);
 
-  // 정책 분야 필터 옵션 채우기
-  const policyCategories = [...new Set(candidates.flatMap(candidate => Object.keys(candidate.promises)))];
-  policyCategories.sort().forEach(category => {
-    const option = document.createElement("option");
-    option.value = category;
-    option.textContent = category;
-    policyFilter.appendChild(option);
-  });
-  */
-
-  // 후보자 순서 랜덤화
-  const shuffledCandidates = shuffleArray([...candidates]);
-
-  // 후보자 카드 생성 및 표시
-  shuffledCandidates.forEach((candidate) => {
-    const card = createCandidateCard(candidate);
-    candidatesGrid.appendChild(card);
-    card.addEventListener("click", () => {
-      console.log("Clicked candidate:", candidate.name);
-      displayCandidatePromises(candidate);
+      // 카드 클릭 이벤트 - URL 변경 및 모달 표시
+      card.addEventListener("click", () => {
+        const slug = candidate.slug;
+        const englishSlug = getEnglishSlug(slug);
+        // URL 변경
+        window.history.pushState({ slug: slug, candidateId: candidate.id }, "", `/candidates/${englishSlug}`);
+        // 모달 표시
+        displayCandidatePromises(candidate);
+      });
     });
-  });
+  }
+  
+  // 후보자 카드 초기 로드 및 표시
+  resetCandidatesDisplay();
+  
+  // 초기 URL 처리
+  handleInitialUrl();
 
   // 검색 기능 구현
   const candidateSearch = document.getElementById("candidateSearch");
@@ -146,17 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
         candidateSearch.value = "";
 
         // 전체 후보 다시 표시
-        candidatesGrid.innerHTML = "";
-        const shuffledCandidates = shuffleArray([...candidates]);
-        shuffledCandidates.forEach((candidate) => {
-          const card = createCandidateCard(candidate);
-          candidatesGrid.appendChild(card);
-
-          // 카드 클릭 이벤트 - 모달 표시
-          card.addEventListener("click", () => {
-            displayCandidatePromises(candidate);
-          });
-        });
+        resetCandidatesDisplay();
       });
 
       return;
@@ -167,8 +211,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = createCandidateCard(candidate);
       candidatesGrid.appendChild(card);
 
-      // 카드 클릭 이벤트 - 모달 표시
+      // 카드 클릭 이벤트 - URL 변경 및 모달 표시
       card.addEventListener("click", () => {
+        const slug = candidate.slug;
+        const englishSlug = getEnglishSlug(slug);
+        // URL 변경
+        window.history.pushState({ slug: slug, candidateId: candidate.id }, "", `/candidates/${englishSlug}`);
+        // 모달 표시
         displayCandidatePromises(candidate);
       });
     });
@@ -193,17 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
       candidateSearch.value = "";
 
       // 전체 후보 다시 표시
-      candidatesGrid.innerHTML = "";
-      const shuffledCandidates = shuffleArray([...candidates]);
-      shuffledCandidates.forEach((candidate) => {
-        const card = createCandidateCard(candidate);
-        candidatesGrid.appendChild(card);
-
-        // 카드 클릭 이벤트 - 모달 표시
-        card.addEventListener("click", () => {
-          displayCandidatePromises(candidate);
-        });
-      });
+      resetCandidatesDisplay();
     });
   }
 });
@@ -221,6 +260,7 @@ function shuffleArray(array) {
 function createCandidateCard(candidate) {
   const card = document.createElement("div");
   card.className = "candidate-card";
+  card.dataset.slug = candidate.slug; // slug 데이터 속성 추가
 
   card.innerHTML = `
         <img class="candidate-img" src="${candidate.image}" alt="${candidate.name}">
@@ -235,7 +275,6 @@ function createCandidateCard(candidate) {
 
 // 후보자 공약 모달 표시 함수
 function displayCandidatePromises(candidate) {
-  console.log("displayCandidatePromises called for:", candidate.name);
   const modal = document.getElementById("promiseModal");
   // 모달 먼저 표시
   modal.style.display = "block";
@@ -288,8 +327,17 @@ function displayCandidatePromises(candidate) {
     } else {
       console.warn("Unknown promises format", candidate.promises);
     }
+    
+    // URL에 후보자 정보가 포함되도록 설정
+    const englishSlug = getEnglishSlug(candidate.slug);
+    if (window.location.pathname !== `/candidates/${englishSlug}`) {
+      window.history.pushState(
+        { slug: candidate.slug, candidateId: candidate.id },
+        "",
+        `/candidates/${englishSlug}`
+      );
+    }
   } catch (err) {
     console.error("Error in displayCandidatePromises:", err);
   }
-  // 모달 표시 로직는 위 try 전에 실행됨
 }
